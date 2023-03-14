@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//create a new user with its qrcode 
+Route::post('codegen', [UserController::class, 'create']);
+
+//get the user's page
+Route::get('/users/{name}', [UserController::class, 'getUser']);
