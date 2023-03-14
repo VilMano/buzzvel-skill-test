@@ -65,15 +65,15 @@ class UserController extends Controller
         $errors = "";
 
         if($name == null || $name == ""){
-            $errors .= "Name cannot be empty.";
+            $errors .= "Name cannot be empty. \\n ";
         }
         
         if($linkedin == null || $linkedin == ""){
-            $errors .= "Linkedin URL cannot be empty.";
+            $errors .= "Linkedin URL cannot be empty. \\n ";
         }
         
         if($github == null || $github == ""){
-            $errors .= "Github URL cannot be empty.";
+            $errors .= "Github URL cannot be empty. \\n ";
         }
         
         return $errors;

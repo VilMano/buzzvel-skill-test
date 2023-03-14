@@ -14,3 +14,8 @@ The **User** model was created so we could have access to a permanent page inste
 
 The **QrCodeGenerator** model was made with the purpose of re-utilizing code dynamically.
 
+---
+
+For validating input data I used HTML5 "required" tags and in case someone edits the HTML, I added extra validation on the server side that alerts the user to fill the right boxes.
+
+---
