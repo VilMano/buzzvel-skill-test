@@ -51,7 +51,7 @@ class UserController extends Controller
         //if qrcode png does not exist, create a new one and store it
         if(!Storage::exists(public_path().'/codes/'.$user->name.'-qrcode.png')){
             $qr = new QrCodeGenerator();
-            $qr->url = 'localhost:8000/users/'.$user->name;
+            $qr->url = env('APP_URL').':8000/users/'.$user->name;
             $qr->label = $user->name;
             $qr->size = 300;
             $qr->dir = 'codes/'.$user->name.'-qrcode.png';
