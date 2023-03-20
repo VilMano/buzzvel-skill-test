@@ -19,3 +19,12 @@ The **QrCodeGenerator** model was made with the purpose of re-utilizing code dyn
 For validating input data I used HTML5 "required" tags and in case someone edits the HTML, I added extra validation on the server side that alerts the user to fill the right boxes.
 
 ---
+
+## How to run the code
+Change the values of the env file to suit your database
+After this, run:
+`$ php artisan migrate`
+
+Run the server:
+`$ php artisan serve`
+
